@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "tracker": {
+    "type": "github",
+    "repository": "vacolosi/PRD-MAKER",
+    "createdLabels": [
+      "agent-generated"
+    ],
+    "claim": {
+      "removeLabels": [
+        "agent-ready"
+      ],
+      "addLabels": [
+        "agent-working"
+      ]
+    },
+    "blockedLabel": "agent-blocked",
+    "needsSpecLabel": "agent-needs-spec",
+    "inReviewLabel": "agent-review"
+  },
+  "queues": {
+    "default": {
+      "readyLabels": [
+        "agent-ready"
+      ],
+      "excludeLabels": [
+        "blocked",
+        "agent-blocked"
+      ],
+      "priorityLabels": [
+        "priority:p0",
+        "priority:p1",
+        "priority:p2",
+        "priority:p3"
+      ],
+      "limit": 50
+    }
+  },
+  "defaultQueue": "default",
+  "parent": {
+    "model": "anthropic/claude-opus-4-6:high",
+    "fast": false
+  },
+  "worktrees": {
+    "baseBranch": "main",
+    "root": "../PRD-MAKER-pi-worktrees",
+    "branchTemplate": "work/{kind}-{id}-{slug}",
+    "kindMap": {
+      "bug": "fix"
+    }
+  },
+  "worker": {
+    "agent": "worker",
+    "model": "openai-codex/gpt-5.6-terra:high",
+    "fast": false,
+    "timeoutMs": 7200000
+  },
+  "reviewers": {
+    "agents": [
+      "fleet-reviewer"
+    ],
+    "model": "anthropic/claude-opus-4-6:high",
+    "fast": false,
+    "tinyFixes": true,
+    "maxRounds": 2,
+    "timeoutMs": 1800000
+  },
+  "gates": {
+    "command": "npm test",
+    "timeoutMs": 1800000
+  },
+  "delivery": {
+    "mode": "auto-merge",
+    "remote": "origin",
+    "commitTemplate": "chore: {title} ({id})"
+  }
+}

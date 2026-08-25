@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "hedral-relay": "^0.8.10"
+  }
+}
