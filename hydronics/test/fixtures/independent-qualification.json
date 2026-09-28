@@ -1,0 +1,943 @@
+{
+  "source": "Astra parent-independent qualification using independently extracted source nodes; expected metrics are not generated from production datasets.",
+  "conventions": {
+    "gpm": 100,
+    "lengthFt": 100,
+    "actualInsideDiameterIn": 4.026,
+    "roughnessFt": 0.00015,
+    "gravityMS2": 9.80665,
+    "method": "linear density; log-linear viscosity; bisection Colebrook; 20F leave-one-out bracket"
+  },
+  "acceptanceLimitsPercent": {
+    "density": 0.025,
+    "viscosity": 1.5,
+    "Re": 1.5,
+    "head": 0.5
+  },
+  "results": {
+    "dowfrost-pg-30vol-2001-09": {
+      "leaveOneOut": {
+        "density": {
+          "maxAbsPercent": 0.015738117721120215,
+          "rmsPercent": 0.008805872343521093
+        },
+        "viscosity": {
+          "maxAbsPercent": 1.2923772135973177,
+          "rmsPercent": 0.7378870729287624
+        },
+        "Re": {
+          "maxAbsPercent": 1.2838947504766995,
+          "rmsPercent": 0.7381091395965171
+        },
+        "head": {
+          "maxAbsPercent": 0.23435446459283416,
+          "rmsPercent": 0.1340246193649345
+        }
+      },
+      "at104F": [
+        63.653999999999996,
+        1.6296793751182193
+      ],
+      "sameGuideSIComparison": {
+        "densityWorst": {
+          "C": 35,
+          "F": 95,
+          "densityPercent": 0.009619695376228421,
+          "viscosityPercent": -0.07358977532857525
+        },
+        "viscosityWorst": {
+          "C": 70,
+          "F": 158,
+          "densityPercent": 0.00015534355330970584,
+          "viscosityPercent": 0.8744704798817393
+        },
+        "rows": [
+          {
+            "C": 0,
+            "F": 32,
+            "densityPercent": 0.004993144197240618,
+            "viscosityPercent": 0.16251415394470392
+          },
+          {
+            "C": 5,
+            "F": 41,
+            "densityPercent": 0.008668202661921143,
+            "viscosityPercent": 0.05805176133086842
+          },
+          {
+            "C": 10,
+            "F": 50,
+            "densityPercent": -0.0027627433832222437,
+            "viscosityPercent": 0
+          },
+          {
+            "C": 15,
+            "F": 59,
+            "densityPercent": -0.0045444279801687415,
+            "viscosityPercent": 0.30560247375430727
+          },
+          {
+            "C": 20,
+            "F": 68,
+            "densityPercent": 0.0006450747370712051,
+            "viscosityPercent": 0.1608847091766341
+          },
+          {
+            "C": 25,
+            "F": 77,
+            "densityPercent": 0.0031171383679584608,
+            "viscosityPercent": 0.11415066681208508
+          },
+          {
+            "C": 30,
+            "F": 86,
+            "densityPercent": 0.002854190009937696,
+            "viscosityPercent": -0.09746808634831794
+          },
+          {
+            "C": 35,
+            "F": 95,
+            "densityPercent": 0.009619695376228421,
+            "viscosityPercent": -0.07358977532857525
+          },
+          {
+            "C": 40,
+            "F": 104,
+            "densityPercent": 0.003851275604005444,
+            "viscosityPercent": -0.019670238146052288
+          },
+          {
+            "C": 45,
+            "F": 113,
+            "densityPercent": 0.0003933505967390616,
+            "viscosityPercent": 0.017813490272677868
+          },
+          {
+            "C": 50,
+            "F": 122,
+            "densityPercent": -0.002317023950559882,
+            "viscosityPercent": 0.4997790591180662
+          },
+          {
+            "C": 55,
+            "F": 131,
+            "densityPercent": -0.006628218229443039,
+            "viscosityPercent": -0.329173379883152
+          },
+          {
+            "C": 60,
+            "F": 140,
+            "densityPercent": -0.003836222499742359,
+            "viscosityPercent": 0
+          },
+          {
+            "C": 65,
+            "F": 149,
+            "densityPercent": -0.005424245376584036,
+            "viscosityPercent": -0.050284303179459755
+          },
+          {
+            "C": 70,
+            "F": 158,
+            "densityPercent": 0.00015534355330970584,
+            "viscosityPercent": 0.8744704798817393
+          },
+          {
+            "C": 75,
+            "F": 167,
+            "densityPercent": 0.002952000189360149,
+            "viscosityPercent": 0.41365310601821914
+          },
+          {
+            "C": 80,
+            "F": 176,
+            "densityPercent": 0.0029363167089568876,
+            "viscosityPercent": 0.4847127839062493
+          },
+          {
+            "C": 85,
+            "F": 185,
+            "densityPercent": 0.00007674650166489272,
+            "viscosityPercent": -0.10656565693583087
+          },
+          {
+            "C": 90,
+            "F": 194,
+            "densityPercent": -0.005660467969259564,
+            "viscosityPercent": 0.61319972129672
+          }
+        ]
+      }
+    },
+    "dowfrost-pg-40vol-2001-09": {
+      "leaveOneOut": {
+        "density": {
+          "maxAbsPercent": 0.016072002571521082,
+          "rmsPercent": 0.008797866768806801
+        },
+        "viscosity": {
+          "maxAbsPercent": 1.3299311563350846,
+          "rmsPercent": 0.8648786245518498
+        },
+        "Re": {
+          "maxAbsPercent": 1.3200604744518118,
+          "rmsPercent": 0.862159200966814
+        },
+        "head": {
+          "maxAbsPercent": 0.3361029325846143,
+          "rmsPercent": 0.18131143162233992
+        }
+      },
+      "at104F": [
+        64.076,
+        2.2445286857775697
+      ],
+      "sameGuideSIComparison": {
+        "densityWorst": {
+          "C": 60,
+          "F": 140,
+          "densityPercent": 0.008701171349700942,
+          "viscosityPercent": 0
+        },
+        "viscosityWorst": {
+          "C": 90,
+          "F": 194,
+          "densityPercent": 0.0001233354687490973,
+          "viscosityPercent": -0.6114141704331888
+        },
+        "rows": [
+          {
+            "C": 0,
+            "F": 32,
+            "densityPercent": 0.005549509110580608,
+            "viscosityPercent": 0.20657147842131351
+          },
+          {
+            "C": 5,
+            "F": 41,
+            "densityPercent": 0.002271345909332645,
+            "viscosityPercent": 0.09715266852072801
+          },
+          {
+            "C": 10,
+            "F": 50,
+            "densityPercent": 0.005875358396179031,
+            "viscosityPercent": 0
+          },
+          {
+            "C": 15,
+            "F": 59,
+            "densityPercent": 0.005247969224519977,
+            "viscosityPercent": 0.11196440593626011
+          },
+          {
+            "C": 20,
+            "F": 68,
+            "densityPercent": 0.0019049499859535857,
+            "viscosityPercent": 0.08789631526338049
+          },
+          {
+            "C": 25,
+            "F": 77,
+            "densityPercent": -0.004173561569165152,
+            "viscosityPercent": 0.22840745943559781
+          },
+          {
+            "C": 30,
+            "F": 86,
+            "densityPercent": -0.003322421575724377,
+            "viscosityPercent": 0.02255959542645236
+          },
+          {
+            "C": 35,
+            "F": 95,
+            "densityPercent": -0.005201436693402783,
+            "viscosityPercent": 0.3461174055265914
+          },
+          {
+            "C": 40,
+            "F": 104,
+            "densityPercent": -0.000091665055557133,
+            "viscosityPercent": 0.2021734722129187
+          },
+          {
+            "C": 45,
+            "F": 113,
+            "densityPercent": -0.002778036721584609,
+            "viscosityPercent": 0.25447070583886067
+          },
+          {
+            "C": 50,
+            "F": 122,
+            "densityPercent": 0.007842201628793788,
+            "viscosityPercent": 0.0796672189058878
+          },
+          {
+            "C": 55,
+            "F": 131,
+            "densityPercent": 0.004736528590143507,
+            "viscosityPercent": -0.012076946415084944
+          },
+          {
+            "C": 60,
+            "F": 140,
+            "densityPercent": 0.008701171349700942,
+            "viscosityPercent": 0
+          },
+          {
+            "C": 65,
+            "F": 149,
+            "densityPercent": -0.0015819970970443187,
+            "viscosityPercent": -0.4921569343668497
+          },
+          {
+            "C": 70,
+            "F": 158,
+            "densityPercent": -0.004798107216841263,
+            "viscosityPercent": 0.2795563743252183
+          },
+          {
+            "C": 75,
+            "F": 167,
+            "densityPercent": -0.0008708199082274604,
+            "viscosityPercent": 0.1790324201975002
+          },
+          {
+            "C": 80,
+            "F": 176,
+            "densityPercent": -0.0001216774651813246,
+            "viscosityPercent": 0.12945739155971747
+          },
+          {
+            "C": 85,
+            "F": 185,
+            "densityPercent": 0.004637829485631961,
+            "viscosityPercent": -0.12200706083518309
+          },
+          {
+            "C": 90,
+            "F": 194,
+            "densityPercent": 0.0001233354687490973,
+            "viscosityPercent": -0.6114141704331888
+          }
+        ]
+      }
+    },
+    "dowfrost-pg-50vol-2001-09": {
+      "leaveOneOut": {
+        "density": {
+          "maxAbsPercent": 0.01601281024821155,
+          "rmsPercent": 0.010667722463083475
+        },
+        "viscosity": {
+          "maxAbsPercent": 1.3300724564126787,
+          "rmsPercent": 0.7748414522577066
+        },
+        "Re": {
+          "maxAbsPercent": 1.32764151571092,
+          "rmsPercent": 0.7743422554385243
+        },
+        "head": {
+          "maxAbsPercent": 0.3644581958329285,
+          "rmsPercent": 0.18138414356685886
+        }
+      },
+      "at104F": [
+        64.438,
+        3.1136412019994735
+      ],
+      "sameGuideSIComparison": {
+        "densityWorst": {
+          "C": 70,
+          "F": 158,
+          "densityPercent": 0.01076241913118281,
+          "viscosityPercent": 0.3058389230390812
+        },
+        "viscosityWorst": {
+          "C": 0,
+          "F": 32,
+          "densityPercent": -0.004297810718545403,
+          "viscosityPercent": 0.8872446004996704
+        },
+        "rows": [
+          {
+            "C": 0,
+            "F": 32,
+            "densityPercent": -0.004297810718545403,
+            "viscosityPercent": 0.8872446004996704
+          },
+          {
+            "C": 5,
+            "F": 41,
+            "densityPercent": 0.005722317478595862,
+            "viscosityPercent": 0.7062460063551157
+          },
+          {
+            "C": 10,
+            "F": 50,
+            "densityPercent": 0.0008912499417590425,
+            "viscosityPercent": 0.56657223796035
+          },
+          {
+            "C": 15,
+            "F": 59,
+            "densityPercent": 0.005591487357681224,
+            "viscosityPercent": 0.6325225902019227
+          },
+          {
+            "C": 20,
+            "F": 68,
+            "densityPercent": 0.004923926051136895,
+            "viscosityPercent": 0.6541129877233542
+          },
+          {
+            "C": 25,
+            "F": 77,
+            "densityPercent": 0.0011762749473565037,
+            "viscosityPercent": 0.7310505129894063
+          },
+          {
+            "C": 30,
+            "F": 86,
+            "densityPercent": 0.007788669324093611,
+            "viscosityPercent": 0.6768741505019049
+          },
+          {
+            "C": 35,
+            "F": 95,
+            "densityPercent": 0.0051560104233905335,
+            "viscosityPercent": 0.4626584691639124
+          },
+          {
+            "C": 40,
+            "F": 104,
+            "densityPercent": 0.009470292727797869,
+            "viscosityPercent": 0.44003877417655435
+          },
+          {
+            "C": 45,
+            "F": 113,
+            "densityPercent": 0.003291755706813504,
+            "viscosityPercent": 0.12687670011080066
+          },
+          {
+            "C": 50,
+            "F": 122,
+            "densityPercent": -0.002547543013819986,
+            "viscosityPercent": 0.33790507099946687
+          },
+          {
+            "C": 55,
+            "F": 131,
+            "densityPercent": -0.00020834310724415772,
+            "viscosityPercent": 0.06148892959079166
+          },
+          {
+            "C": 60,
+            "F": 140,
+            "densityPercent": 0.009204152685704514,
+            "viscosityPercent": 0
+          },
+          {
+            "C": 65,
+            "F": 149,
+            "densityPercent": 0.00012126210306995233,
+            "viscosityPercent": 0.04477099184785338
+          },
+          {
+            "C": 70,
+            "F": 158,
+            "densityPercent": 0.01076241913118281,
+            "viscosityPercent": 0.3058389230390812
+          },
+          {
+            "C": 75,
+            "F": 167,
+            "densityPercent": -0.0007950719600913203,
+            "viscosityPercent": 0.254832935943905
+          },
+          {
+            "C": 80,
+            "F": 176,
+            "densityPercent": 0.0011154914378419534,
+            "viscosityPercent": 0.5793278599538709
+          },
+          {
+            "C": 85,
+            "F": 185,
+            "densityPercent": 0.007033060818484316,
+            "viscosityPercent": 0.34542417195282393
+          },
+          {
+            "C": 90,
+            "F": 194,
+            "densityPercent": 0.00010314067966366025,
+            "viscosityPercent": 0.3166823564430876
+          }
+        ]
+      }
+    },
+    "dowtherm-sr1-eg-30vol-2008-02": {
+      "leaveOneOut": {
+        "density": {
+          "maxAbsPercent": 0.015637216575459245,
+          "rmsPercent": 0.008877736296995968
+        },
+        "viscosity": {
+          "maxAbsPercent": 1.0862285652023518,
+          "rmsPercent": 0.5814247363213577
+        },
+        "Re": {
+          "maxAbsPercent": 1.0823446048711216,
+          "rmsPercent": 0.5823104331902964
+        },
+        "head": {
+          "maxAbsPercent": 0.20458830936422867,
+          "rmsPercent": 0.09853537538771243
+        }
+      },
+      "at104F": [
+        64.796,
+        1.343678823804904
+      ],
+      "sameGuideSIComparison": {
+        "densityWorst": {
+          "C": 10,
+          "F": 50,
+          "densityPercent": 0.010503301560804701,
+          "viscosityPercent": 0
+        },
+        "viscosityWorst": {
+          "C": 85,
+          "F": 185,
+          "densityPercent": 0.002584432076924159,
+          "viscosityPercent": 0.747208398049426
+        },
+        "rows": [
+          {
+            "C": 0,
+            "F": 32,
+            "densityPercent": 0.005107521760661093,
+            "viscosityPercent": 0.21734032222453514
+          },
+          {
+            "C": 5,
+            "F": 41,
+            "densityPercent": 0.009139518507761402,
+            "viscosityPercent": -0.11370753594336369
+          },
+          {
+            "C": 10,
+            "F": 50,
+            "densityPercent": 0.010503301560804701,
+            "viscosityPercent": 0
+          },
+          {
+            "C": 15,
+            "F": 59,
+            "densityPercent": 0.0076588550562251,
+            "viscosityPercent": 0.10161696756039174
+          },
+          {
+            "C": 20,
+            "F": 68,
+            "densityPercent": 0.002115669659752406,
+            "viscosityPercent": -0.11026261524422765
+          },
+          {
+            "C": 25,
+            "F": 77,
+            "densityPercent": 0.004593408575082059,
+            "viscosityPercent": 0.13482160385260844
+          },
+          {
+            "C": 30,
+            "F": 86,
+            "densityPercent": 0.007827741493260376,
+            "viscosityPercent": 0.11805735898262615
+          },
+          {
+            "C": 35,
+            "F": 95,
+            "densityPercent": 0.0037503850193632005,
+            "viscosityPercent": 0.13324456276579966
+          },
+          {
+            "C": 40,
+            "F": 104,
+            "densityPercent": 0.0031171383679584608,
+            "viscosityPercent": 0.2745390899182132
+          },
+          {
+            "C": 45,
+            "F": 113,
+            "densityPercent": 0.002856907100645678,
+            "viscosityPercent": -0.31070322453203847
+          },
+          {
+            "C": 50,
+            "F": 122,
+            "densityPercent": -0.006331828998518141,
+            "viscosityPercent": -0.26860700225597167
+          },
+          {
+            "C": 55,
+            "F": 131,
+            "densityPercent": 0.002288913567904949,
+            "viscosityPercent": -0.04855977715005899
+          },
+          {
+            "C": 60,
+            "F": 140,
+            "densityPercent": 0.008216587790066399,
+            "viscosityPercent": 0
+          },
+          {
+            "C": 65,
+            "F": 149,
+            "densityPercent": 0.00986746361801849,
+            "viscosityPercent": -0.2808367363404174
+          },
+          {
+            "C": 70,
+            "F": 158,
+            "densityPercent": -0.0037702416861962185,
+            "viscosityPercent": 0.46116008479857307
+          },
+          {
+            "C": 75,
+            "F": 167,
+            "densityPercent": -0.0009988744216649081,
+            "viscosityPercent": 0.04066683019516848
+          },
+          {
+            "C": 80,
+            "F": 176,
+            "densityPercent": 0.002173276977823768,
+            "viscosityPercent": -0.07031046962453491
+          },
+          {
+            "C": 85,
+            "F": 185,
+            "densityPercent": 0.002584432076924159,
+            "viscosityPercent": 0.747208398049426
+          },
+          {
+            "C": 90,
+            "F": 194,
+            "densityPercent": 0.00020678010821395532,
+            "viscosityPercent": 0.6528955529983671
+          }
+        ]
+      }
+    },
+    "dowtherm-sr1-eg-40vol-2008-02": {
+      "leaveOneOut": {
+        "density": {
+          "maxAbsPercent": 0.015389350569416926,
+          "rmsPercent": 0.008761297531547944
+        },
+        "viscosity": {
+          "maxAbsPercent": 1.0224360245587594,
+          "rmsPercent": 0.5987392848400123
+        },
+        "Re": {
+          "maxAbsPercent": 1.0195207124469863,
+          "rmsPercent": 0.6000107562890293
+        },
+        "head": {
+          "maxAbsPercent": 0.23206570439016083,
+          "rmsPercent": 0.11344282978454123
+        }
+      },
+      "at104F": [
+        65.662,
+        1.7743631241642652
+      ],
+      "sameGuideSIComparison": {
+        "densityWorst": {
+          "C": 60,
+          "F": 140,
+          "densityPercent": 0.007662378932549174,
+          "viscosityPercent": 0
+        },
+        "viscosityWorst": {
+          "C": 90,
+          "F": 194,
+          "densityPercent": 0.003175811801314765,
+          "viscosityPercent": 0.7686863800971055
+        },
+        "rows": [
+          {
+            "C": 0,
+            "F": 32,
+            "densityPercent": 0.0074064465275469615,
+            "viscosityPercent": 0.05564081139284305
+          },
+          {
+            "C": 5,
+            "F": 41,
+            "densityPercent": 0.0072444215602152084,
+            "viscosityPercent": -0.10024084920240428
+          },
+          {
+            "C": 10,
+            "F": 50,
+            "densityPercent": 0.004438852928556614,
+            "viscosityPercent": 0
+          },
+          {
+            "C": 15,
+            "F": 59,
+            "densityPercent": 0.006878081706540584,
+            "viscosityPercent": 0.02411654331420099
+          },
+          {
+            "C": 20,
+            "F": 68,
+            "densityPercent": -0.0027531029661465034,
+            "viscosityPercent": 0.18371829366770065
+          },
+          {
+            "C": 25,
+            "F": 77,
+            "densityPercent": -0.005634992265268757,
+            "viscosityPercent": 0.25037842308426317
+          },
+          {
+            "C": 30,
+            "F": 86,
+            "densityPercent": -0.002096900775039323,
+            "viscosityPercent": -0.16257624877505927
+          },
+          {
+            "C": 35,
+            "F": 95,
+            "densityPercent": 0.005233063667842153,
+            "viscosityPercent": 0.28997627595077624
+          },
+          {
+            "C": 40,
+            "F": 104,
+            "densityPercent": 0.0004128219215360218,
+            "viscosityPercent": 0.24650419007148372
+          },
+          {
+            "C": 45,
+            "F": 113,
+            "densityPercent": 0.00547144343412409,
+            "viscosityPercent": -0.39080598107080755
+          },
+          {
+            "C": 50,
+            "F": 122,
+            "densityPercent": 0.0017438268097302867,
+            "viscosityPercent": -0.24494380211259603
+          },
+          {
+            "C": 55,
+            "F": 131,
+            "densityPercent": 0.006043254502507978,
+            "viscosityPercent": -0.28100498697064547
+          },
+          {
+            "C": 60,
+            "F": 140,
+            "densityPercent": 0.007662378932549174,
+            "viscosityPercent": 0
+          },
+          {
+            "C": 65,
+            "F": 149,
+            "densityPercent": 0.0007800223461362776,
+            "viscosityPercent": 0.13435162198445205
+          },
+          {
+            "C": 70,
+            "F": 158,
+            "densityPercent": 0.0035223338657797143,
+            "viscosityPercent": -0.08170612149991374
+          },
+          {
+            "C": 75,
+            "F": 167,
+            "densityPercent": 0.005106046565139799,
+            "viscosityPercent": 0.3669095517590204
+          },
+          {
+            "C": 80,
+            "F": 176,
+            "densityPercent": 0.003961943328101292,
+            "viscosityPercent": 0.13135736609051207
+          },
+          {
+            "C": 85,
+            "F": 185,
+            "densityPercent": 0.00006252542037454845,
+            "viscosityPercent": -0.0779389596647806
+          },
+          {
+            "C": 90,
+            "F": 194,
+            "densityPercent": 0.003175811801314765,
+            "viscosityPercent": 0.7686863800971055
+          }
+        ]
+      }
+    },
+    "dowtherm-sr1-eg-50vol-2008-02": {
+      "leaveOneOut": {
+        "density": {
+          "maxAbsPercent": 0.015313935681482427,
+          "rmsPercent": 0.009062526070806086
+        },
+        "viscosity": {
+          "maxAbsPercent": 0.9107288974347316,
+          "rmsPercent": 0.5165709777938292
+        },
+        "Re": {
+          "maxAbsPercent": 0.9098674788019512,
+          "rmsPercent": 0.518862703601297
+        },
+        "head": {
+          "maxAbsPercent": 0.211051313285604,
+          "rmsPercent": 0.10765044589289187
+        }
+      },
+      "at104F": [
+        66.478,
+        2.2608100472508768
+      ],
+      "sameGuideSIComparison": {
+        "densityWorst": {
+          "C": 30,
+          "F": 86,
+          "densityPercent": 0.009469712476795067,
+          "viscosityPercent": -0.027827989229511907
+        },
+        "viscosityWorst": {
+          "C": 85,
+          "F": 185,
+          "densityPercent": 0.0013540297328029638,
+          "viscosityPercent": 0.4346066520743541
+        },
+        "rows": [
+          {
+            "C": 0,
+            "F": 32,
+            "densityPercent": 0.00032304582746611743,
+            "viscosityPercent": 0.20419280590044941
+          },
+          {
+            "C": 5,
+            "F": 41,
+            "densityPercent": 0.00532011265423904,
+            "viscosityPercent": 0.012099057660597268
+          },
+          {
+            "C": 10,
+            "F": 50,
+            "densityPercent": -0.0015459717738197654,
+            "viscosityPercent": 0
+          },
+          {
+            "C": 15,
+            "F": 59,
+            "densityPercent": -0.0032509317955953243,
+            "viscosityPercent": 0.15336255950209043
+          },
+          {
+            "C": 20,
+            "F": 68,
+            "densityPercent": 0.0017238832243915425,
+            "viscosityPercent": 0.19499733236840733
+          },
+          {
+            "C": 25,
+            "F": 77,
+            "densityPercent": 0.005225269958186729,
+            "viscosityPercent": 0.11970473032971718
+          },
+          {
+            "C": 30,
+            "F": 86,
+            "densityPercent": 0.009469712476795067,
+            "viscosityPercent": -0.027827989229511907
+          },
+          {
+            "C": 35,
+            "F": 95,
+            "densityPercent": -0.0027729048521329958,
+            "viscosityPercent": 0.3260066841469511
+          },
+          {
+            "C": 40,
+            "F": 104,
+            "densityPercent": -0.0023093084682290765,
+            "viscosityPercent": 0.03584279871136076
+          },
+          {
+            "C": 45,
+            "F": 113,
+            "densityPercent": 0.007937701468496705,
+            "viscosityPercent": -0.08383530196509614
+          },
+          {
+            "C": 50,
+            "F": 122,
+            "densityPercent": 0.00009278957651126518,
+            "viscosityPercent": -0.22946907962408947
+          },
+          {
+            "C": 55,
+            "F": 131,
+            "densityPercent": 0.008105896612997654,
+            "viscosityPercent": 0.06443968262590527
+          },
+          {
+            "C": 60,
+            "F": 140,
+            "densityPercent": 0.0013261334864234087,
+            "viscosityPercent": 0
+          },
+          {
+            "C": 65,
+            "F": 149,
+            "densityPercent": 0.004029627603330255,
+            "viscosityPercent": 0.33047448602643303
+          },
+          {
+            "C": 70,
+            "F": 158,
+            "densityPercent": 0.004061109658848316,
+            "viscosityPercent": 0.41865599356849525
+          },
+          {
+            "C": 75,
+            "F": 167,
+            "densityPercent": 0.00023267150632833022,
+            "viscosityPercent": 0.1725921136402686
+          },
+          {
+            "C": 80,
+            "F": 176,
+            "densityPercent": -0.00016612446970265538,
+            "viscosityPercent": -0.12334882791923407
+          },
+          {
+            "C": 85,
+            "F": 185,
+            "densityPercent": 0.0013540297328029638,
+            "viscosityPercent": 0.4346066520743541
+          },
+          {
+            "C": 90,
+            "F": 194,
+            "densityPercent": 0.00015813496752059564,
+            "viscosityPercent": 0.15562470032448594
+          }
+        ]
+      }
+    }
+  }
+}

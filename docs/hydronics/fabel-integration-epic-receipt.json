@@ -1,0 +1,23 @@
+{
+  "id": "dff1ee07-830d-4ef5-a52f-122cde861bdd",
+  "identifier": "HEDMEP-204",
+  "title": "Hydronic PD integration epic — Basis of Design, modeled piping, riser and Revit export",
+  "url": "https://linear.app/hedral/issue/HEDMEP-204/hydronic-pd-integration-epic-basis-of-design-modeled-piping-riser-and",
+  "updatedAt": "2026-09-17T15:41:12.819Z",
+  "assignee": {"id": "a16bfe31-25dd-44bf-befc-2c7364356476", "name": "Victor"},
+  "parent": {"id": "082bf1de-e40e-4bce-8447-8cd2e71f6757", "identifier": "HEDMEP-134", "title": "Hydronic & controls"},
+  "project": {"id": "b6a89518-aa85-41a9-9b70-391afcc1f0e4", "name": "Hedral Heat Load Calc"},
+  "state": {"id": "e9c51834-1c72-47bc-a7f7-42860802c0af", "name": "Backlog"},
+  "labels": [{"id": "c22ea7c0-9537-422d-9675-0909771f88b7", "name": "Hydronic & controls"}],
+  "priority": 4,
+  "operation": "update-existing-issue",
+  "newIssuesCreated": 0,
+  "workPackages": 12,
+  "localSpec": "docs/hydronics/fabel-integration-epic.md",
+  "localDescriptionChars": 50370,
+  "remoteDescriptionChars": 50355,
+  "localSha256": "66e8eb609d805bbc1dab6a5559bcb4da7082f0f11d33379142cabd50118fc2d3",
+  "remoteSha256": "20154d0fb80ebd9ee840a41e5472e1d3f89d72a8751dbc50d4bc79941e869f78",
+  "verification": "Remote content matches local spec after Linear bullet/table delimiter normalization, a blank line after the closing rule and trailing whitespace normalization. Parent, project, state, priority and label unchanged; assigned to Victor.",
+  "implementationChanges": false
+}

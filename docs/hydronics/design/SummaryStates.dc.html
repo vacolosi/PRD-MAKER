@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap">
+  <style>
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, "Segoe UI", sans-serif; }
+  </style>
+</helmet>
+
+<div style="position: relative; width: 1440px; height: 1180px; background: #eef2f5; color: #17212b; font-size: 16px; line-height: 1.55; display: flex; flex-direction: column; align-items: center; padding: 28px 0 0 0; box-sizing: border-box;">
+  <div style="width: 1132px; display: flex; flex-direction: column; gap: 26px;">
+
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <div style="color: #526672; font-size: 12.5px; font-weight: 800; letter-spacing: .055em; text-transform: uppercase;">State 1 — blocked (design not eligible)</div>
+      <div style="background: #fff; border: 1px solid #d5dee6; border-top: 5px solid #246b87; border-radius: 12px; padding: 18px 24px; box-shadow: 0 5px 18px rgba(20,44,59,.07); display: grid; grid-template-columns: 1.35fr 1.45fr 1fr; gap: 6px 28px; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 2px;">
+          <div style="color: #526672; font-size: 12.5px; font-weight: 800; letter-spacing: .055em; text-transform: uppercase;">System headline:</div>
+          <div style="font-size: 24px; font-weight: 800; color: #5a6b76; font-variant-numeric: tabular-nums;">unavailable ft / unavailable psi.</div>
+          <div style="font-size: 14px; color: #23495a;"><b>Root flow:</b> 30 GPM.</div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <div style="color: #9b1c1c; font-weight: 700; font-size: 15px;">Incomplete: engine diagnostics, topology, applicability, or margin blocks final results.</div>
+          <div style="display: flex;"><div style="border: 1px solid #9b4444; border-radius: 6px; background: #fff7f7; color: #7c1d1d; font-weight: 700; padding: 6px 12px; font-size: 14px;">View 7 blockers in Results</div></div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #253f4d;">
+          <div><b>Acceptance:</b> Not accepted</div>
+          <div><b>Autosave:</b> valid project and editor draft saved. Normalized valid project is recoverable locally.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <div style="color: #526672; font-size: 12.5px; font-weight: 800; letter-spacing: .055em; text-transform: uppercase;">State 2 — ready to review, not yet accepted</div>
+      <div style="background: #fff; border: 1px solid #d5dee6; border-top: 5px solid #246b87; border-radius: 12px; padding: 18px 24px; box-shadow: 0 5px 18px rgba(20,44,59,.07); display: grid; grid-template-columns: 1.35fr 1.45fr 1fr; gap: 6px 28px; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 2px;">
+          <div style="color: #526672; font-size: 12.5px; font-weight: 800; letter-spacing: .055em; text-transform: uppercase;">System headline:</div>
+          <div style="font-size: 24px; font-weight: 800; color: #142c3b; font-variant-numeric: tabular-nums;">18.5498 ft / 8.0259 psi.</div>
+          <div style="font-size: 14px; color: #23495a;"><b>Root flow:</b> 30 GPM.</div>
+        </div>
+        <div style="color: #176a35; font-weight: 750; font-size: 15px;">Calculation-ready-to-review (not accepted or saved).</div>
+        <div style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #253f4d;">
+          <div><b>Acceptance:</b> Not accepted</div>
+          <div><b>Autosave:</b> valid project and editor draft saved. Normalized valid project is recoverable locally.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <div style="color: #526672; font-size: 12.5px; font-weight: 800; letter-spacing: .055em; text-transform: uppercase;">State 3 — locally accepted, current</div>
+      <div style="background: #fff; border: 1px solid #d5dee6; border-top: 5px solid #176a35; border-radius: 12px; padding: 18px 24px; box-shadow: 0 5px 18px rgba(20,44,59,.07); display: grid; grid-template-columns: 1.35fr 1.45fr 1fr; gap: 6px 28px; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 2px;">
+          <div style="color: #526672; font-size: 12.5px; font-weight: 800; letter-spacing: .055em; text-transform: uppercase;">System headline:</div>
+          <div style="font-size: 24px; font-weight: 800; color: #142c3b; font-variant-numeric: tabular-nums;">18.5498 ft / 8.0259 psi.</div>
+          <div style="font-size: 14px; color: #23495a;"><b>Root flow:</b> 30 GPM.</div>
+        </div>
+        <div style="color: #176a35; font-weight: 750; font-size: 15px;">Calculation-ready-to-review (not accepted or saved).</div>
+        <div style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #253f4d;">
+          <div style="display: flex; align-items: center; gap: 8px;"><b>Acceptance:</b><div style="border-radius: 999px; background: #e2f2e7; border: 1px solid #9ecfae; color: #176a35; font-size: 13px; font-weight: 750; padding: 1px 10px;">Locally accepted / current</div></div>
+          <div><b>Autosave:</b> valid project and editor draft saved. Normalized valid project is recoverable locally.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <div style="color: #526672; font-size: 12.5px; font-weight: 800; letter-spacing: .055em; text-transform: uppercase;">State 4 — accepted result gone stale after an edit</div>
+      <div style="background: #fff; border: 1px solid #d5dee6; border-top: 5px solid #bc8200; border-radius: 12px; padding: 18px 24px; box-shadow: 0 5px 18px rgba(20,44,59,.07); display: grid; grid-template-columns: 1.35fr 1.45fr 1fr; gap: 6px 28px; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 2px;">
+          <div style="color: #526672; font-size: 12.5px; font-weight: 800; letter-spacing: .055em; text-transform: uppercase;">System headline:</div>
+          <div style="font-size: 24px; font-weight: 800; color: #142c3b; font-variant-numeric: tabular-nums;">30.1421 ft / 13.0413 psi.</div>
+          <div style="font-size: 14px; color: #23495a;"><b>Root flow:</b> 50 GPM.</div>
+        </div>
+        <div style="color: #176a35; font-weight: 750; font-size: 15px;">Calculation-ready-to-review (not accepted or saved).</div>
+        <div style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #253f4d;">
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><b>Acceptance:</b><div style="border-radius: 999px; background: #fff6d9; border: 1px solid #d9b96a; color: #64491b; font-size: 13px; font-weight: 750; padding: 1px 10px;">Locally accepted result is stale</div></div>
+          <div><b>Autosave:</b> valid project and editor draft saved. Normalized valid project is recoverable locally.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <div style="color: #526672; font-size: 12.5px; font-weight: 800; letter-spacing: .055em; text-transform: uppercase;">State 5 — unresolved invalid raw input</div>
+      <div style="background: #fff; border: 1px solid #d5dee6; border-top: 5px solid #9b1c1c; border-radius: 12px; padding: 18px 24px; box-shadow: 0 5px 18px rgba(20,44,59,.07); display: grid; grid-template-columns: 1.35fr 1.45fr 1fr; gap: 6px 28px; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <div style="color: #526672; font-size: 12.5px; font-weight: 800; letter-spacing: .055em; text-transform: uppercase;">System headline:</div>
+          <div style="font-size: 15px; color: #17212b;"><b>Current headline unavailable.</b> Retained normalized details below are last-valid/provisional only; no governing claim is made.</div>
+        </div>
+        <div style="color: #9b1c1c; font-weight: 700; font-size: 15px;">Provisional/invalid input: current governing headline is unavailable until visible raw input is corrected or discarded.</div>
+        <div style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #253f4d;">
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><b>Acceptance:</b><div style="border-radius: 999px; background: #fff6d9; border: 1px solid #d9b96a; color: #64491b; font-size: 13px; font-weight: 750; padding: 1px 10px;">Locally accepted result is stale because the editor has unresolved invalid text</div></div>
+          <div><b>Autosave:</b> valid project and editor draft saved. Editor has unresolved raw text; only recoverable draft text is saved.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

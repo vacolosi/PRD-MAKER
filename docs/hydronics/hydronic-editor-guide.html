@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hydronic Pressure-Drop Editor — Guide</title>
+  <style>
+    :root { color-scheme: light; --ink:#082d4a; --muted:#486172; --line:#cbdbe4; --paper:#fff; --page:#eef3f6; --blue:#0d6689; --blue-pale:#e7f3f8; --warn:#9b4b00; --warn-pale:#fff5da; --red:#a31e17; --red-pale:#fff2f1; --green:#1f713b; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--page); color:var(--ink); font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { width:min(1040px, calc(100% - 32px)); margin:32px auto 64px; }
+    header, section, aside { background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:24px; margin:18px 0; box-shadow:0 2px 10px rgba(8,45,74,.05); }
+    header { border-top:5px solid var(--blue); }
+    h1,h2,h3 { margin:0 0 10px; line-height:1.2; }
+    h1 { font-size:clamp(1.8rem,4vw,2.6rem); }
+    h2 { font-size:1.4rem; }
+    h3 { font-size:1.05rem; }
+    p { margin:8px 0; }
+    .lede { color:var(--muted); font-size:1.08rem; max-width:76ch; }
+    nav { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
+    nav a { color:var(--ink); background:var(--blue-pale); border:1px solid #b9d7e3; border-radius:999px; padding:5px 11px; text-decoration:none; font-size:.9rem; font-weight:650; }
+    nav a:hover { background:#d8edf5; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:14px; }
+    .card { border:1px solid var(--line); border-radius:9px; padding:17px; background:#fbfdfe; }
+    .tag { display:inline-block; margin-bottom:8px; padding:2px 8px; background:var(--blue-pale); border-radius:999px; color:#14516d; font-size:.78rem; font-weight:750; letter-spacing:.03em; text-transform:uppercase; }
+    .warning { border-left:5px solid #da9200; background:var(--warn-pale); }
+    .danger { border-left:5px solid #c83a31; background:var(--red-pale); }
+    ol,ul { padding-left:1.35rem; margin:8px 0; }
+    li + li { margin-top:7px; }
+    code { color:#063d5b; background:#eaf3f7; border:1px solid #d5e4eb; border-radius:4px; padding:1px 4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; }
+    .path { display:block; overflow:auto; padding:12px 14px; border-radius:8px; background:#062c45; color:#f1fbff; font:14px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace; white-space:nowrap; }
+    .step { display:grid; grid-template-columns:34px 1fr; gap:10px; align-items:start; }
+    .step b:first-child { display:grid; place-items:center; width:28px; height:28px; border-radius:50%; color:white; background:var(--blue); }
+    footer { color:var(--muted); font-size:.9rem; text-align:center; margin-top:24px; }
+    @media (max-width:560px) { main { width:min(100% - 20px,1040px); margin-top:10px; } header,section,aside { padding:18px; } }
+    @media print { body { background:white; } main { width:100%; margin:0; } header,section,aside { box-shadow:none; break-inside:avoid; } nav { display:none; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Hydronic pressure-drop editor</h1>
+    <p class="lede">A practical guide to what each part of the local browser app does, how an ordinary calculation moves through it, and why the workbook example has special safety labels.</p>
+    <nav aria-label="Guide contents">
+      <a href="#workflow">Normal workflow</a><a href="#system">System</a><a href="#sections">Sections</a><a href="#circuits">Circuits</a><a href="#results">Results</a><a href="#files">Files &amp; report</a><a href="#workbook">Workbook reference</a>
+    </nav>
+  </header>
+
+  <aside class="warning">
+    <h2>What the app calculates</h2>
+    <p>It calculates closed-loop liquid friction loss: actual-fluid head and loss-equivalent psi. It does <strong>not</strong> calculate static lift, pump selection, pump certification, NPSH, balancing, or automatic pipe sizing.</p>
+  </aside>
+
+  <section id="workflow">
+    <h2>Normal calculation workflow</h2>
+    <div class="grid">
+      <div class="card step"><b>1</b><div><h3>Define the system</h3><p>Set fluid, temperature, pump connection, nodes, and the safety factor in <strong>System</strong>.</p></div></div>
+      <div class="card step"><b>2</b><div><h3>Add physical sections</h3><p>Describe each real pipe/equipment segment once in <strong>Sections</strong>.</p></div></div>
+      <div class="card step"><b>3</b><div><h3>Build complete routes</h3><p>Use <strong>Circuits</strong> to put the physical sections in pump-discharge-to-pump-suction order.</p></div></div>
+      <div class="card step"><b>4</b><div><h3>Review and confirm</h3><p>Resolve diagnostics, confirm applicability for each loss, acknowledge the safety factor, and inspect <strong>Results</strong>.</p></div></div>
+      <div class="card step"><b>5</b><div><h3>Accept or export</h3><p>Only a calculation-ready result can be accepted locally. Use <strong>Files &amp; report</strong> for JSON, CSV, and print.</p></div></div>
+    </div>
+  </section>
+
+  <section id="system">
+    <h2>System</h2>
+    <div class="grid">
+      <div class="card"><span class="tag">System</span><h3>Fluid and temperature</h3><p>Choose the named water/glycol reference and the mean operating temperature. These determine the fluid density and viscosity used by the engine.</p></div>
+      <div class="card"><span class="tag">Pump connection</span><h3>Where the loop starts and ends</h3><p>Select the pump discharge node and pump suction node. A valid circuit must form a continuous route between them.</p></div>
+      <div class="card"><span class="tag">Nodes</span><h3>Connection points</h3><p>Nodes are named connection points such as a supply split, terminal, or return merge. Sections connect one node to another.</p></div>
+      <div class="card"><span class="tag">Safety factor</span><h3>Explicit review gate</h3><p>Choose the loss categories that receive the safety factor, enter a percent, and explicitly acknowledge it—even when it is zero.</p></div>
+    </div>
+  </section>
+
+  <section id="sections">
+    <h2>Sections</h2>
+    <p>A section is one <strong>physical</strong> piece of the system: a pipe run plus any fittings, valves, or equipment losses located in that piece. Create it once, even when several circuits use it.</p>
+    <div class="grid">
+      <div class="card"><h3>Pipe data</h3><p>Set the from/to nodes, actual length, and catalog or custom pipe geometry. The engine calculates the straight-pipe loss from these inputs.</p></div>
+      <div class="card"><h3>Non-pipe losses</h3><p>Add manual K, equivalent length, preset elbow, Cv, direct psi, or direct head. These are separate from pipe friction.</p></div>
+      <div class="card"><h3>Section PD</h3><p>The card header shows the evaluated total for that physical section when its route and applicability gates are complete. <strong>Unavailable</strong> is deliberate: it never means zero.</p></div>
+      <div class="card"><h3>Confirm current basis</h3><p>This records that a loss applies at the current flow, fluid, temperature, and geometry. Relevant edits make that confirmation stale.</p></div>
+    </div>
+  </section>
+
+  <section id="circuits">
+    <h2>Circuits</h2>
+    <p>A circuit is a complete water route through the model. It tells the engine which physical sections are in series for a terminal and which ones are shared with other terminal routes.</p>
+    <span class="path">pump discharge → supply sections → terminal section → return sections → pump suction</span>
+    <ul>
+      <li><strong>Supply path:</strong> ordered supply sections from pump discharge toward the load.</li>
+      <li><strong>Terminal section:</strong> the load or terminal equipment for that route.</li>
+      <li><strong>Return path:</strong> ordered return sections back toward pump suction.</li>
+      <li><strong>Terminal design GPM:</strong> the design flow for that complete route. The engine derives shared-section flow by adding terminal flows; section GPM is never typed directly.</li>
+    </ul>
+    <aside class="danger"><strong>Why a circuit matters:</strong> Without a complete route, the app cannot safely know the flow through each section, so it cannot make a governing-head claim.</aside>
+  </section>
+
+  <section id="results">
+    <h2>Results / Show the math</h2>
+    <div class="grid">
+      <div class="card"><h3>System headline</h3><p>The governing path is the highest complete circuit path after the configured safety factor. It is not the sum of every section in the system.</p></div>
+      <div class="card"><h3>Section totals</h3><p>One row per physical section, including its derived flow, total head, psi, and availability. Parallel branches are alternatives, so there is no fake grand-total row.</p></div>
+      <div class="card"><h3>Blocking diagnostics</h3><p>Lists every unresolved engine, topology, applicability, or safety-factor issue. Use it as the checklist for making a result calculation-ready.</p></div>
+      <div class="card"><h3>Show the math</h3><p>Select a circuit to inspect velocity, Reynolds number, friction factor, individual losses, cumulative detail, and the engine’s public outputs.</p></div>
+    </div>
+  </section>
+
+  <section id="files">
+    <h2>Files &amp; report</h2>
+    <ul>
+      <li><strong>Save JSON / Open JSON:</strong> save or load portable project inputs locally. Imported acceptance is historical only; it is never automatically trusted as local acceptance.</li>
+      <li><strong>Accept reviewed result:</strong> records a locally reviewed snapshot only after all calculation gates are satisfied.</li>
+      <li><strong>Print report / Download itemized CSV:</strong> create local outputs from the current app state.</li>
+      <li><strong>Reset to synthetic example:</strong> discard the local draft and restore the built-in starter sample.</li>
+    </ul>
+  </section>
+
+  <section id="workbook">
+    <h2>Workbook reference and provisional path</h2>
+    <p>The legacy workbook was a reference source, not a portable calculation contract. Its stored row flows and diagram do not describe every circuit in a machine-readable way.</p>
+    <div class="grid">
+      <div class="card"><span class="tag">Workbook reference tab</span><h3>Browse all 31 transcribed inputs</h3><p>This is a read-only reference table: stream, pipe geometry, length, manual losses, and <strong>Workbook-stored reference flow</strong>. Those flows are historical display values only—they are not supplied to the engine.</p></div>
+      <div class="card"><span class="tag">Files &amp; report</span><h3>Load workbook example input reference</h3><p>Loads all 31 physical input groups but no circuits. Use it to inspect/edit the transcribed inputs. Results stay unavailable because no portable topology has been declared.</p></div>
+      <div class="card"><span class="tag">Files &amp; report</span><h3>Load provisional 100 GPM workbook path</h3><p>Loads the one diagram-supported selected path: Sections 07–16, terminal 17, and Sections 18–31. It is intentionally partial, inferred, unaccepted, and not legacy-equivalent.</p></div>
+    </div>
+    <aside class="warning"><strong>Why only one provisional path?</strong> The workbook shows additional branches and coils, but it does not provide enough identified pipe/terminal records to construct every branch without inventing data. A full calculation-ready network needs an engineer to define and review those missing routes.</aside>
+  </section>
+
+  <footer>Local guide for the standalone hydronic pressure-drop editor. It makes no engineering approval or calculation claim.</footer>
+</main>
+</body>
+</html>

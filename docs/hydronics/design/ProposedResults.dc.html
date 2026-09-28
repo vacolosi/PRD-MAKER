@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap">
+  <style>
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, "Segoe UI", sans-serif; }
+  </style>
+</helmet>
+
+<div style="position: relative; width: 1440px; height: 1330px; background: #eef2f5; color: #17212b; font-size: 16px; line-height: 1.55; display: flex; flex-direction: column; align-items: center; padding: 28px 0 0 0; box-sizing: border-box;">
+  <div style="width: 1132px; display: flex; flex-direction: column; gap: 18px;">
+
+    <div style="background: #fff; border: 1px solid #d5dee6; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 10px;">
+      <div style="font-size: 24px; font-weight: 800; color: #142c3b;">Results / Show the math</div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <div style="font-size: 15px;"><b>Root flow:</b> 30 GPM. <b>System headline:</b> <span style="font-variant-numeric: tabular-nums;">unavailable ft / unavailable psi.</span></div>
+          <div style="font-size: 15px; color: #3c4f5c; font-variant-numeric: tabular-nums;">Raw governing: unavailable ft (unavailable). Factored governing: unavailable ft (unavailable).</div>
+        </div>
+        <div style="color: #9b1c1c; font-weight: 700; font-size: 15px;">Incomplete: engine diagnostics, topology, applicability, or margin blocks final results.</div>
+      </div>
+    </div>
+
+    <div style="background: #fff7f7; border: 1px solid #e5c8c8; border-left: 4px solid #b95a5a; border-radius: 8px; padding: 16px 18px; display: flex; flex-direction: column; gap: 8px;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <div style="font-weight: 800; color: #7c1d1d; font-size: 15px;">Blocking diagnostics</div>
+        <div style="border-radius: 999px; background: #b95a5a; color: #fff; font-size: 12.5px; font-weight: 800; padding: 1px 10px; font-variant-numeric: tabular-nums;">7</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 5px; font-size: 14.5px; color: #6e2020;">
+        <div style="display: flex; gap: 8px;"><div style="width: 5px; border-radius: 3px; background: #d8a3a3; flex-shrink: 0;"></div><div>margin: Margin acknowledgement is required, including explicit zero.</div></div>
+        <div style="display: flex; gap: 8px;"><div style="width: 5px; border-radius: 3px; background: #d8a3a3; flex-shrink: 0;"></div><div>section:common-supply/element:common-k: Engineer applicability confirmation is required for the current fluid/service basis.</div></div>
+        <div style="display: flex; gap: 8px;"><div style="width: 5px; border-radius: 3px; background: #d8a3a3; flex-shrink: 0;"></div><div>section:terminal-1/element:terminal-1-cv: Engineer applicability confirmation is required for the current fluid/service basis.</div></div>
+        <div style="display: flex; gap: 8px;"><div style="width: 5px; border-radius: 3px; background: #d8a3a3; flex-shrink: 0;"></div><div>section:common-return/element:common-elbow: Engineer applicability confirmation is required for the current fluid/service basis.</div></div>
+        <div style="display: flex; gap: 8px;"><div style="width: 5px; border-radius: 3px; background: #d8a3a3; flex-shrink: 0;"></div><div>section:common-supply/element:common-k: Engineer applicability confirmation is required for the current fluid/service basis.</div></div>
+        <div style="display: flex; gap: 8px;"><div style="width: 5px; border-radius: 3px; background: #d8a3a3; flex-shrink: 0;"></div><div>section:terminal-2/element:terminal-2-psi: Engineer applicability confirmation is required for the current fluid/service basis.</div></div>
+        <div style="display: flex; gap: 8px;"><div style="width: 5px; border-radius: 3px; background: #d8a3a3; flex-shrink: 0;"></div><div>section:common-return/element:common-elbow: Engineer applicability confirmation is required for the current fluid/service basis.</div></div>
+      </div>
+    </div>
+
+    <div style="background: #fff; border: 1px solid #d5dee6; border-left: 5px solid #246b87; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 12px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3eaef; padding: 0 0 10px 0;">
+        <div style="font-size: 18px; font-weight: 800; color: #142c3b;">circuit-10 — selected inspector</div>
+        <div style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="7.5" fill="#fff" stroke="#246b87" stroke-width="1.6"/><circle cx="9" cy="9" r="4" fill="#246b87"/></svg><div style="font-weight: 700; color: #163d4f; font-size: 14px;">Inspect</div></div>
+      </div>
+      <div style="font-size: 15px; font-variant-numeric: tabular-nums;">incomplete; pipe 10.1466, fitting 0.9209, valve 0, equipment 0.7126 ft; raw unavailable; margin unavailable; factored unavailable; psi unavailable.</div>
+      <div style="display: flex; flex-direction: column; gap: 4px; font-size: 13.5px; color: #6e2020; background: #fff7f7; border-radius: 6px; padding: 8px 12px;">
+        <div>section:common-supply/element:common-k: Engineer applicability confirmation is required for the current fluid/service basis.</div>
+        <div>section:terminal-1/element:terminal-1-cv: Engineer applicability confirmation is required for the current fluid/service basis.</div>
+        <div>section:common-return/element:common-elbow: Engineer applicability confirmation is required for the current fluid/service basis.</div>
+      </div>
+
+      <div style="background: #f6f9fa; border: 1px solid #dbe6eb; border-radius: 7px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px;">
+        <div style="display: flex; align-items: center; gap: 10px;"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="#1c485c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div style="font-weight: 800; color: #1c485c; font-size: 15px; font-variant-numeric: tabular-nums;">common-supply: 30 GPM; ID 1.61 in; roughness 1.500e-4 ft; turbulent</div></div>
+        <div style="font-size: 14.5px; color: #17212b; padding: 0 0 0 24px; font-variant-numeric: tabular-nums;">Velocity 4.7278 ft/s; Re 52,516.5726; fD 0.0242; density 999.0165 kg/m³; viscosity 0.0011 Pa*s; friction 6.2619 ft actual fluid/100ft; authoritative section total unavailable ft.</div>
+        <div style="display: flex; flex-direction: column; gap: 5px; padding: 0 0 0 24px;">
+          <div style="border-left: 3px solid #c3d5dd; padding: 2px 0 2px 10px; font-size: 13.5px; color: #2c4250; font-variant-numeric: tabular-nums;">pipe [pipe], quantity 1; K unavailable, EL unavailable, Cv unavailable; head 5.0095 ft / 2.1696 psi; cumulative 5.0095; source automatic pipe; provenance none</div>
+          <div style="border-left: 3px solid #c3d5dd; padding: 2px 0 2px 10px; font-size: 13.5px; color: #2c4250; font-variant-numeric: tabular-nums;">k [fitting], quantity 1; K 1.2, EL unavailable, Cv unavailable; head 0.4168 ft / 0.1805 psi; cumulative 5.4264; source K 1.2; basis section-inside-diameter; provenance none</div>
+        </div>
+      </div>
+
+      <div style="background: #f6f9fa; border: 1px solid #dbe6eb; border-radius: 7px; padding: 12px 14px; display: flex; align-items: center; gap: 10px;"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5 3l4 4-4 4" stroke="#1c485c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div style="font-weight: 800; color: #1c485c; font-size: 15px; font-variant-numeric: tabular-nums;">branch-1: 10 GPM; ID 1.61 in; roughness 1.500e-4 ft; turbulent</div></div>
+      <div style="background: #f6f9fa; border: 1px solid #dbe6eb; border-radius: 7px; padding: 12px 14px; display: flex; align-items: center; gap: 10px;"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5 3l4 4-4 4" stroke="#1c485c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div style="font-weight: 800; color: #1c485c; font-size: 15px; font-variant-numeric: tabular-nums;">terminal-1: 10 GPM; ID 1.61 in; roughness 1.500e-4 ft; turbulent</div></div>
+      <div style="background: #f6f9fa; border: 1px solid #dbe6eb; border-radius: 7px; padding: 12px 14px; display: flex; align-items: center; gap: 10px;"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5 3l4 4-4 4" stroke="#1c485c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div style="font-weight: 800; color: #1c485c; font-size: 15px; font-variant-numeric: tabular-nums;">common-return: 30 GPM; ID 1.61 in; roughness 1.500e-4 ft; turbulent</div></div>
+
+      <div style="font-size: 15px; font-variant-numeric: tabular-nums;">Selected-inspector cumulative <b>11.7802 ft</b>; authoritative circuit raw unavailable ft.</div>
+    </div>
+
+    <div style="background: #fff; border: 1px solid #d5dee6; border-left: 5px solid #246b87; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 10px; opacity: .85;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="font-size: 18px; font-weight: 800; color: #142c3b;">circuit-20</div>
+        <div style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="7.5" fill="#fff" stroke="#8da1af" stroke-width="1.6"/></svg><div style="font-weight: 700; color: #163d4f; font-size: 14px;">Inspect</div></div>
+      </div>
+      <div style="font-size: 15px; font-variant-numeric: tabular-nums;">incomplete; pipe 11.8566, fitting 0.9209, valve 0, equipment 5.7723 ft; raw unavailable; margin unavailable; factored unavailable; psi unavailable.</div>
+      <div style="font-size: 15px; font-variant-numeric: tabular-nums;">Selected-inspector cumulative 18.5498 ft; authoritative circuit raw unavailable ft.</div>
+    </div>
+
+    <div style="font-size: 14px; color: #3c4f5c; padding: 0 4px;">DOE estimates are generic turbulent-service Darcy approximations (connection/manufacturer unspecified), including glycol limitations. Direct psi/head are actual-fluid/design-flow values; Cv has no universal viscous/choked-service qualification.</div>
+
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

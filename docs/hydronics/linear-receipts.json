@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "parentIdentifier": "HEDMEP-134",
+  "issues": {
+    "HYD-001": {
+      "id": "9d4e3871-2b7e-45b7-a5a6-03e6abea4371",
+      "identifier": "HEDMEP-198",
+      "url": "https://linear.app/hedral/issue/HEDMEP-198/hydronic-pd-v1-qualify-reference-data-and-define-the-portable-contract",
+      "title": "Hydronic PD v1 — qualify reference data and define the portable contract",
+      "marker": "hydronic-pd-v1:HYD-001",
+      "createdAt": "2026-09-15T16:24:35.219Z",
+      "verified": {
+        "parentIdentifier": "HEDMEP-134",
+        "projectId": "b6a89518-aa85-41a9-9b70-391afcc1f0e4",
+        "assigneeId": "a16bfe31-25dd-44bf-befc-2c7364356476",
+        "labelIds": [
+          "c22ea7c0-9537-422d-9675-0909771f88b7"
+        ],
+        "state": "Done",
+        "markerPresent": true,
+        "verifiedAt": "2026-09-15T17:45:33.191Z",
+        "descriptionSynchronizedAt": "2026-09-15T17:32:14.000Z",
+        "descriptionMarker": "hydronic-pd-v1:HYD-001",
+        "repairStatus": "Done after parent-authorized R1 prelude: required active referenceDataVersion binding plus build/test evidence."
+      }
+    },
+    "HYD-002": {
+      "id": "d384b250-83a4-4afc-949e-5b694f435db5",
+      "identifier": "HEDMEP-199",
+      "url": "https://linear.app/hedral/issue/HEDMEP-199/hydronic-pd-v1-implement-validated-pipe-fitting-valve-and-equipment",
+      "title": "Hydronic PD v1 — implement validated pipe, fitting, valve and equipment losses",
+      "marker": "hydronic-pd-v1:HYD-002",
+      "createdAt": "2026-09-15T16:24:35.542Z",
+      "verified": {
+        "parentIdentifier": "HEDMEP-134",
+        "projectId": "b6a89518-aa85-41a9-9b70-391afcc1f0e4",
+        "assigneeId": "a16bfe31-25dd-44bf-befc-2c7364356476",
+        "labelIds": [
+          "c22ea7c0-9537-422d-9675-0909771f88b7"
+        ],
+        "state": "In Review",
+        "markerPresent": true,
+        "verifiedAt": "2026-09-15T18:22:50.973Z",
+        "handoffStatus": "Second bounded repair handoff: M1-M3/RT1-RT4 implementation checks passed; retained G01-G12 matrix expansion remains incomplete and requires parent review."
+      },
+      "dependencies": [
+        {
+          "blockedBy": "HYD-001",
+          "relationId": "0968360a-edb1-4bf1-a921-28a4a7a0a882",
+          "type": "blocks"
+        }
+      ]
+    },
+    "HYD-003": {
+      "id": "43e06695-d6a7-4b6c-ab50-50423d8ce09d",
+      "identifier": "HEDMEP-200",
+      "url": "https://linear.app/hedral/issue/HEDMEP-200/hydronic-pd-v1-evaluate-shared-supplyreturn-circuits-and-governing",
+      "title": "Hydronic PD v1 — evaluate shared supply/return circuits and governing pump head",
+      "marker": "hydronic-pd-v1:HYD-003",
+      "createdAt": "2026-09-15T16:24:35.818Z",
+      "verified": {
+        "parentIdentifier": "HEDMEP-134",
+        "projectId": "b6a89518-aa85-41a9-9b70-391afcc1f0e4",
+        "assigneeId": "a16bfe31-25dd-44bf-befc-2c7364356476",
+        "labelIds": [
+          "c22ea7c0-9537-422d-9675-0909771f88b7"
+        ],
+        "state": "In Review",
+        "markerPresent": true,
+        "verifiedAt": "2026-09-15T18:22:50.973Z",
+        "handoffStatus": "Second bounded repair handoff: M1-M3/RT1-RT4 implementation checks passed; retained G01-G12 matrix expansion remains incomplete and requires parent review."
+      },
+      "dependencies": [
+        {
+          "blockedBy": "HYD-001",
+          "relationId": "af2e12c1-3ae4-42b9-aa25-dbf4a33a30ce",
+          "type": "blocks"
+        },
+        {
+          "blockedBy": "HYD-002",
+          "relationId": "73c77154-9ccd-4a3a-9569-452b3d472378",
+          "type": "blocks"
+        }
+      ]
+    },
+    "HYD-004": {
+      "id": "be1ea19d-5352-41bd-bcb4-c1f02e2033d6",
+      "identifier": "HEDMEP-201",
+      "url": "https://linear.app/hedral/issue/HEDMEP-201/hydronic-pd-v1-build-the-sectioncircuit-editor-and-show-the-math",
+      "title": "Hydronic PD v1 — build the section/circuit editor and Show the math interface",
+      "marker": "hydronic-pd-v1:HYD-004",
+      "createdAt": "2026-09-15T16:24:36.296Z",
+      "verified": {
+        "parentIdentifier": "HEDMEP-134",
+        "projectId": "b6a89518-aa85-41a9-9b70-391afcc1f0e4",
+        "assigneeId": "a16bfe31-25dd-44bf-befc-2c7364356476",
+        "labelIds": [
+          "c22ea7c0-9537-422d-9675-0909771f88b7"
+        ],
+        "state": "Backlog",
+        "markerPresent": true,
+        "verifiedAt": "2026-09-15T16:32:31.365Z"
+      },
+      "dependencies": [
+        {
+          "blockedBy": "HYD-001",
+          "relationId": "b77bf6e4-44f7-40e7-9dad-5339aec431f9",
+          "type": "blocks"
+        },
+        {
+          "blockedBy": "HYD-002",
+          "relationId": "5c704819-54ba-40dc-9f30-a928b7bf6600",
+          "type": "blocks"
+        },
+        {
+          "blockedBy": "HYD-003",
+          "relationId": "f06ef125-612b-45e2-91ef-08bc742374c8",
+          "type": "blocks"
+        }
+      ]
+    },
+    "HYD-005": {
+      "id": "2a4efb21-9afa-46df-bc17-e14a724a513f",
+      "identifier": "HEDMEP-202",
+      "url": "https://linear.app/hedral/issue/HEDMEP-202/hydronic-pd-v1-save-projects-retain-reviewed-results-and-export",
+      "title": "Hydronic PD v1 — save projects, retain reviewed results and export calculations",
+      "marker": "hydronic-pd-v1:HYD-005",
+      "createdAt": "2026-09-15T16:24:36.650Z",
+      "verified": {
+        "parentIdentifier": "HEDMEP-134",
+        "projectId": "b6a89518-aa85-41a9-9b70-391afcc1f0e4",
+        "assigneeId": "a16bfe31-25dd-44bf-befc-2c7364356476",
+        "labelIds": [
+          "c22ea7c0-9537-422d-9675-0909771f88b7"
+        ],
+        "state": "Backlog",
+        "markerPresent": true,
+        "verifiedAt": "2026-09-15T16:32:32.753Z"
+      },
+      "dependencies": [
+        {
+          "blockedBy": "HYD-003",
+          "relationId": "5be8d094-18b2-40a2-aad5-daa222043abe",
+          "type": "blocks"
+        },
+        {
+          "blockedBy": "HYD-004",
+          "relationId": "15cf650c-b8c6-4051-85d9-b3e0fdeceb32",
+          "type": "blocks"
+        }
+      ]
+    },
+    "HYD-006": {
+      "id": "371cf2b1-cbff-4f76-bcec-fbeb5246a0a7",
+      "identifier": "HEDMEP-203",
+      "url": "https://linear.app/hedral/issue/HEDMEP-203/hydronic-pd-v1-independently-validate-the-calculator-and-document",
+      "title": "Hydronic PD v1 — independently validate the calculator and document Fabel handoff",
+      "marker": "hydronic-pd-v1:HYD-006",
+      "createdAt": "2026-09-15T16:24:36.958Z",
+      "verified": {
+        "parentIdentifier": "HEDMEP-134",
+        "projectId": "b6a89518-aa85-41a9-9b70-391afcc1f0e4",
+        "assigneeId": "a16bfe31-25dd-44bf-befc-2c7364356476",
+        "labelIds": [
+          "c22ea7c0-9537-422d-9675-0909771f88b7"
+        ],
+        "state": "Backlog",
+        "markerPresent": true,
+        "verifiedAt": "2026-09-15T16:32:32.914Z"
+      },
+      "dependencies": [
+        {
+          "blockedBy": "HYD-001",
+          "relationId": "03a796b0-979e-4c96-8a4e-6c723759fd0a",
+          "type": "blocks"
+        },
+        {
+          "blockedBy": "HYD-002",
+          "relationId": "3a8ade10-3d88-4161-a24c-0fedaf2531fc",
+          "type": "blocks"
+        },
+        {
+          "blockedBy": "HYD-003",
+          "relationId": "7b03e693-63a4-42b4-940f-3ad13123787f",
+          "type": "blocks"
+        },
+        {
+          "blockedBy": "HYD-004",
+          "relationId": "e7d48e76-06c4-40cd-91be-db2b3106b426",
+          "type": "blocks"
+        },
+        {
+          "blockedBy": "HYD-005",
+          "relationId": "889fc02f-6b58-479f-8249-85874279d516",
+          "type": "blocks"
+        }
+      ]
+    },
+    "HYD-007": {
+      "id": "dff1ee07-830d-4ef5-a52f-122cde861bdd",
+      "identifier": "HEDMEP-204",
+      "url": "https://linear.app/hedral/issue/HEDMEP-204/hydronic-pd-future-integrate-the-validated-engine-when-fabel-routing",
+      "title": "Hydronic PD future — integrate the validated engine when Fabel routing is ready",
+      "marker": "hydronic-pd-v1:HYD-007",
+      "createdAt": "2026-09-15T16:24:37.438Z",
+      "verified": {
+        "parentIdentifier": "HEDMEP-134",
+        "projectId": "b6a89518-aa85-41a9-9b70-391afcc1f0e4",
+        "assigneeId": "a16bfe31-25dd-44bf-befc-2c7364356476",
+        "labelIds": [
+          "c22ea7c0-9537-422d-9675-0909771f88b7"
+        ],
+        "state": "Backlog",
+        "markerPresent": true,
+        "verifiedAt": "2026-09-15T16:32:33.087Z"
+      },
+      "dependencies": [
+        {
+          "blockedBy": "HYD-006",
+          "relationId": "0ebc0275-ba13-43f8-a09d-92deeb606d66",
+          "type": "blocks"
+        }
+      ]
+    }
+  }
+}
