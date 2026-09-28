@@ -13,6 +13,10 @@ Notion Mechanical PRD List using the Hedral template, then files the companion
 Linear issue in the PRD Creation project. This repo is its source of truth. It
 covers the Notion path only so far; Google Doc and Word output are still to come.
 
+`hydronics/` is the retired standalone hydronic pressure-drop calculator. Its
+engine and docs moved to `vacolosi/Heat-Load-Calcs` (`packages/hydronic-pd`,
+`docs/hydronics/`).
+
 ## How the skill stays live
 
 `~/.claude/skills/prd` is a Windows directory junction pointing at

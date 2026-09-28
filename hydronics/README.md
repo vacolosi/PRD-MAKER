@@ -1,5 +1,10 @@
 # Hydronic pressure-drop editor and engine (HYD-001–004)
 
+> **Retired.** The engine now lives in `vacolosi/Heat-Load-Calcs` as
+> `packages/hydronic-pd`, which is its source of truth (copied from commit
+> `2fd601c`). Don't fix bugs or add features here, because nothing copies them
+> across anymore. This folder is kept as a record and for the standalone editor.
+
 Standalone TypeScript calculation engine for prescribed-design-flow closed hydronic circuits. It contains a local browser editor for HYD-004, plus no persistence, Fabel integration, workbook access, pump curves, balancing solver, static-lift calculation, or automatic pipe sizing**.
 
 Run from this directory:
